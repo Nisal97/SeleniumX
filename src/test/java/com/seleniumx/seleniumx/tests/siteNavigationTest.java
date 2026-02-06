@@ -8,8 +8,11 @@ public class siteNavigationTest extends BaseTest {
 
     @Test
     public void siteNavigation(){
+
+        Home HomeFunc = new Home(driver);
+
         driver.get("https://automationexercise.com/");
-        Home.clickSignInSignUpButton();
+        HomeFunc.clickSignInSignUpButton();
     }
 
 }

@@ -10,9 +10,9 @@ public class HomePage extends BasePage{
         super(driver);   // ✅ mandatory
     }
 
-    protected static By loginButton = By.xpath("//a[contains(text(),' Signup / Login')]");
+    protected By loginButton = By.xpath("//a[contains(text(),' Signup / Login')]");
 
-    public static void clickLoginPage(){
+    public void clickLoginPage(){
         driver.findElement(loginButton).click();
     }
 }
